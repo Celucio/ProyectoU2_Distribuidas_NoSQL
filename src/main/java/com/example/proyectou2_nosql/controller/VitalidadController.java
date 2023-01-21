@@ -25,7 +25,7 @@ public class VitalidadController {
         return vitalidadService.getAll();
     }
     @DeleteMapping(path = "/delete/{id}")
-    public void deleteById(@RequestParam String id) {
+    public void deleteById(@PathVariable(name = "id") String id) {
         vitalidadService.deleteById(id);
     }
     @PutMapping(path = "/update")

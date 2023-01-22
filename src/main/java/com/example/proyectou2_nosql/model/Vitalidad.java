@@ -17,6 +17,7 @@ import java.util.List;
 public class Vitalidad {
     @Id
     private String id;
+    private int idAnimal;
     private String presion;
     private String pulso_cardiaco;
     private String tipo_sangre;
@@ -32,6 +33,14 @@ public class Vitalidad {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public int getIdAnimal() {
+        return idAnimal;
+    }
+
+    public void setIdAnimal(int idAnimal) {
+        this.idAnimal = idAnimal;
     }
 
     public String getPresion() {
